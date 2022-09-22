@@ -80,7 +80,7 @@ module.exports = {
       config._serviceWorkerRegistrationInjected = true;
       return `<script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js')
+    navigator.serviceWorker.register('/sw.js')
     .catch((error) => {
       console.error('Could not setup service worker: ' + error);
     });
